@@ -649,6 +649,13 @@ nav {
     .suites-wrap {
         grid-template-columns: auto;
     }
+    .tools {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .tools-item {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 /* --Section-3-- */
