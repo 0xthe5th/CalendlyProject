@@ -1157,6 +1157,18 @@ ul {
 
 }
 @media (max-width: 500px) {
+    .footer-columns-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-columns-wrap {
+        gap: 1em;
+    }
+    .footer-column {
+        padding-top: 10px;
+    }
+    .footer-columns-wrap ul li a {
+    font-size: 14px;
+}
     .download-social-wrap {
         display: block;
     }
