@@ -8,21 +8,23 @@
     color: #0C3557;
 }
 
-/* --HEADER-- */
+.display-width {
+    width: 84%;
+    margin: auto;
+}
 
 header {
     width: 100%;
     background-color: white;
     border-bottom: thin solid #dadee6;
-    position: fixed;
     z-index: 200;
 }
-.alert-wrap {
+
+.alertt {
     background-color: #f3f6fa;
 }
-.alert {
-    width: 84%;
-    margin: auto;
+
+.alert-wrap {
     padding: 4px 0;
     color: #476788;
     display: flex;
@@ -30,30 +32,28 @@ header {
     align-items: center;
     gap: 1em;
 }
-.alert li:hover {
+
+.alert-wrap li:hover {
     color: #016AFF;
     cursor: pointer;
 }
-.alert li:hover .alert-icon {
+
+.alert-wrap li:hover .alert-icon {
     color: #016AFF;
     cursor: pointer;
 }
+
 nav {
-    /* border: 2px solid black; */
-    width: 84%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    /* border: 2px solid black; */
     width: 160px;
 }
 
 .menu-list {
-    /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,18 +61,16 @@ nav {
 }
 
 .menu-items {
-    /* border: 2px solid #016AFF; */
     padding: 20px 0px;
     position: relative;
 }
 
 .menu-items a {
-    /* border: 2px solid black; */
     border-radius: 10px;
     color: black;
     padding: 8px;
     text-decoration: none;
-    /* pointer-events: auto; */
+    font-weight: 500;
 }
 
 .menu-items a:hover {
@@ -85,18 +83,21 @@ nav {
 
 .dropdown {
     background-color: white;
+    width: 680px;
     height: auto;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -140px;
     z-index: 90;
     visibility: hidden;
 }
 
 .login {
     color: black;
-    padding: 14px 14px;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .login:hover {
@@ -106,13 +107,60 @@ nav {
 .get-started {
     background-color: #016AFF;
     color: white;
-    padding: 14px 14px;
+    padding: 14px 16px;
     border-radius: 10px;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .get-started:hover {
     background-color: #004EB9;
+}
+
+.hambuger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    .display-width {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .menu-list {
+        gap: 0.8em;
+    }
+}
+
+@media (max-width: 990px) {
+    .menu-list {
+        display: none;
+    }
+
+    .hambuger {
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 890px) {
+    .display-width {
+        width: 94%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login {
+        display: none;
+    }
+
+    .alert-wrap {
+        justify-content: space-between;
+    }
 }
 
 /* --HERO-SECTION-- */
