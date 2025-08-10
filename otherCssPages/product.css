@@ -550,6 +550,9 @@ nav {
         width: inherit;
         font-size: 20px;
     }
+    .sect4-card-wrap {
+        flex-direction: column;
+    }
     .sect4-card2-wrap {
         grid-template-columns: 1fr;
     }
@@ -642,8 +645,8 @@ nav {
 }
 .sect7-top h2 {
     width: 486px;
-    font-size: 48px;
-    font-weight: 620;
+    font-size: 50px;
+    font-weight: 600;
 }
 
 .billing-plans-wrap {
@@ -704,7 +707,9 @@ nav {
 }
 @media (max-width: 500px) {
     .sect7-top h2 {
-        font-size: 40px;
+        font-size: 32px;
+        text-align: center;
+        width: inherit;
     }
     .billing-plans-wrap {
         grid-template-columns: 1fr;
