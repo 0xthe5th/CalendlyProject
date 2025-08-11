@@ -404,6 +404,7 @@ nav {
     border-radius: 10px;
     color: #004EB9;
     font-size: 12px;
+    text-align: center;
     padding: 4px 10px;
 }
 .sect-heading-h2 {
@@ -478,6 +479,10 @@ nav {
     }
     .caro-main {
         width: inherit;
+    }
+    .centered-btn-wrap {
+        display: flex;
+        flex-direction: column;
     }
 }
 
