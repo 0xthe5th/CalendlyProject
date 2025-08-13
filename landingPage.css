@@ -1149,7 +1149,7 @@ ul {
 
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1000px) {
     .footer-columns-wrap {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -1158,8 +1158,6 @@ ul {
 @media (max-width: 500px) {
     .footer-columns-wrap {
         grid-template-columns: 1fr 1fr;
-    }
-    .footer-columns-wrap {
         gap: 1em;
     }
     .footer-column {
